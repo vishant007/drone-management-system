@@ -5,7 +5,7 @@ import { Header } from './components/layout/Header';
 import { FleetDashboard } from './components/fleet/FleetDashboard';
 import { MissionPlanningDashboard } from './components/mission/MissionPlanningDashboard';
 import { LiveMonitoringDashboard } from './components/monitoring/LiveMonitoringDashboard';
-import { ComingSoon } from './components/common/ComingSoon';
+import { AnalyticsDashboard } from './components/analytics/AnalyticsDashboard';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -19,12 +19,7 @@ function App() {
       case 'monitoring':
         return <LiveMonitoringDashboard />;
       case 'analytics':
-        return (
-          <ComingSoon
-            title="Analytics & Reporting Portal"
-            description="Comprehensive reporting and analytics system with detailed mission reports, fleet utilization metrics, and executive dashboards."
-          />
-        );
+        return <AnalyticsDashboard />;
       default:
         return <FleetDashboard />;
     }
