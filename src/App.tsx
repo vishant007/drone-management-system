@@ -4,6 +4,7 @@ import { MissionProvider } from './context/MissionContext';
 import { Header } from './components/layout/Header';
 import { FleetDashboard } from './components/fleet/FleetDashboard';
 import { MissionPlanningDashboard } from './components/mission/MissionPlanningDashboard';
+import { LiveMonitoringDashboard } from './components/monitoring/LiveMonitoringDashboard';
 import { ComingSoon } from './components/common/ComingSoon';
 
 function App() {
@@ -16,12 +17,7 @@ function App() {
       case 'planning':
         return <MissionPlanningDashboard />;
       case 'monitoring':
-        return (
-          <ComingSoon
-            title="Real-time Mission Monitoring"
-            description="Monitor active missions in real-time with live drone tracking, mission control actions, and comprehensive progress indicators."
-          />
-        );
+        return <LiveMonitoringDashboard />;
       case 'analytics':
         return (
           <ComingSoon
