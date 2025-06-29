@@ -103,9 +103,9 @@ export function Header({ activeTab, onTabChange }: HeaderProps) {
                 }`}
               >
                 <div className="w-8 h-8 bg-gradient-to-br from-blue-500 to-purple-600 rounded-full flex items-center justify-center text-white text-sm font-bold">
-                  SJ
+                  TC
                 </div>
-                <span className="hidden sm:block text-sm font-medium">Sarah Johnson</span>
+                <span className="hidden sm:block text-sm font-medium">Tom Cruise</span>
                 <ChevronDown className="w-4 h-4" />
               </button>
 

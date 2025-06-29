@@ -47,9 +47,9 @@ export function ProfilePage() {
   const [isEditing, setIsEditing] = useState(false);
   const [profile, setProfile] = useState<UserProfile>({
     id: 'user-001',
-    firstName: 'Sarah',
-    lastName: 'Johnson',
-    email: 'sarah.johnson@flytbase.com',
+    firstName: 'Tom',
+    lastName: 'Cruise',
+    email: 'tom.cruise@flytbase.com',
     phone: '+1 (555) 123-4567',
     title: 'Senior Drone Operations Manager',
     department: 'Flight Operations',
