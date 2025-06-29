@@ -6,6 +6,9 @@ import { FleetDashboard } from './components/fleet/FleetDashboard';
 import { MissionPlanningDashboard } from './components/mission/MissionPlanningDashboard';
 import { LiveMonitoringDashboard } from './components/monitoring/LiveMonitoringDashboard';
 import { AnalyticsDashboard } from './components/analytics/AnalyticsDashboard';
+import { NotificationsPage } from './components/user/NotificationsPage';
+import { SettingsPage } from './components/user/SettingsPage';
+import { ProfilePage } from './components/user/ProfilePage';
 
 function App() {
   const [activeTab, setActiveTab] = useState('dashboard');
@@ -20,6 +23,12 @@ function App() {
         return <LiveMonitoringDashboard />;
       case 'analytics':
         return <AnalyticsDashboard />;
+      case 'notifications':
+        return <NotificationsPage />;
+      case 'settings':
+        return <SettingsPage />;
+      case 'profile':
+        return <ProfilePage />;
       default:
         return <FleetDashboard />;
     }
